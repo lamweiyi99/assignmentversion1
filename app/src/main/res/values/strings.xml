@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">assignment</string>
+    <string name="or">or</string>
+    <string name="create_new_account">CREATE NEW ACCOUNT</string>
+    <string name="log_in">Log In</string>
+    <string name="forgotten_password">Forgotten Password?</string>
+    <string name="password">Password</string>
+    <string name="enter_email_address">Enter email address</string>
+</resources>
