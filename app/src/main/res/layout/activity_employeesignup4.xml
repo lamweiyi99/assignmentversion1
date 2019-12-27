@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#3C4557">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3C4557"
@@ -9,7 +14,7 @@
 
     <EditText
         android:id="@+id/editText25"
-        android:layout_width="281dp"
+        android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="1dp"
@@ -27,7 +32,7 @@
 
     <EditText
         android:id="@+id/editText19"
-        android:layout_width="279dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="7dp"
@@ -45,7 +50,7 @@
 
     <EditText
         android:id="@+id/editText18"
-        android:layout_width="279dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="8dp"
@@ -64,7 +69,7 @@
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
         android:layout_marginTop="16dp"
@@ -82,13 +87,13 @@
 
     <View
         android:id="@+id/divider19"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="3dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView33"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/signupback3" />
 
     <TextView
         android:id="@+id/textView29"
@@ -102,13 +107,13 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintBottom_toTopOf="@+id/signupback3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/signupback3"
         android:layout_width="52dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -137,16 +142,14 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/divider19"
         app:layout_constraintEnd_toStartOf="@+id/divider17"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/signupback3"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <View
         android:id="@+id/divider17"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="3dp"
-        android:layout_marginStart="6dp"
         android:layout_marginTop="41dp"
-        android:layout_marginEnd="13dp"
         android:background="#929292"
         app:layout_constraintEnd_toStartOf="@+id/textView31"
         app:layout_constraintStart_toEndOf="@+id/textView30"
@@ -172,11 +175,9 @@
 
     <View
         android:id="@+id/divider18"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="3dp"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="38dp"
-        android:layout_marginEnd="7dp"
         android:layout_marginBottom="53dp"
         android:background="#929292"
         app:layout_constraintBottom_toTopOf="@+id/divider19"
@@ -204,7 +205,7 @@
 
     <View
         android:id="@+id/divider20"
-        android:layout_width="358dp"
+        android:layout_width="0dp"
         android:layout_height="3dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="8dp"
@@ -217,7 +218,7 @@
 
     <EditText
         android:id="@+id/editText21"
-        android:layout_width="281dp"
+        android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="6dp"
@@ -234,11 +235,11 @@
 
     <Button
         android:id="@+id/signup3"
-        android:layout_width="164dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
         android:layout_marginStart="108dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="84dp"
         android:background="@drawable/buttonborder5"
         android:text="DONE"
@@ -251,7 +252,7 @@
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="295dp"
+        android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="31dp"
@@ -264,3 +265,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText25" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

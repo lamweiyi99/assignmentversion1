@@ -1,142 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3C4557"
-    tools:context=".employeesignup1">
+    android:background="#3C4557">
 
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#3C4557"
+    tools:context=".employeesignup1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="309dp"
+
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background5" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/editText3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="47dp"
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="309dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/background5" />
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="223dp"
-                android:layout_height="33dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="-55dp"
-                android:layout_marginBottom="64dp"
-                android:text="CAREER JUNIORS"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="289dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginTop="-20dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="14dp"
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="First Name"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="289dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="NRIC Numbers"
+            android:inputType="number"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="Last Name"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
 
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="289dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="Email Address"
-                android:inputType="textEmailAddress"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
 
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="286dp"
-                android:layout_height="49dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="#B4B1B1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="NRIC Numbers"
-                android:inputType="number"
-                android:textColorHint="#FFFFFF" />
+        <Button
+            android:id="@+id/employeesignup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttonborder"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
-            <EditText
-                android:id="@+id/editText6"
-                android:layout_width="288dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="14dp"
 
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textColorHint="#FFFFFF" />
-
-            <EditText
-                android:id="@+id/editText7"
-                android:layout_width="288dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="44dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="30dp"
-
-                android:backgroundTint="@android:color/white"
-                android:ems="10"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:textColorHint="#FFFFFF" />
-
-            <Button
-                android:id="@+id/employeesignup"
-                android:layout_width="220dp"
-                android:layout_height="41dp"
-                android:layout_marginStart="70dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/buttonborder"
-                android:text="SIGN UP"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
